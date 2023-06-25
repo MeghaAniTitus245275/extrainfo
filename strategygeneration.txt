@@ -1,0 +1,14 @@
+CREATE TABLE `sakila`.`product` (
+  `product_id` INT NOT NULL AUTO_INCREMENT,
+  `name` VARCHAR(45) NULL,
+  `description` VARCHAR(45) NULL,
+  `price` DECIMAL(10) NULL,
+  `qty` INT NULL,
+  `productcol` VARCHAR(45) NULL,
+  PRIMARY KEY (`product_id`));
+
+
+generation type.identity: for this strategy to work first we have to create a table in my sql db and explicitly specify
+the auto increment column as checked for the primary key column and in application.properties file #spring.jpa.hibernate.ddl-auto = update,
+this should not be set 
+if it is set , it should have value as update.

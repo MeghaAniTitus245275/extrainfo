@@ -1,0 +1,23 @@
+@SpringBootTest
+@AutoConfigureMockMe
+public class ProductControllerTest{
+
+@Autowired
+MockMvc mockMvc
+@Test
+public void shouldsaveAproduct()throws Exception{
+ProductDTO productDTO = ProductDTO.builder().name("Samsung10").description("SomeDescription").build();
+
+ObjectMapper objectMapper = new ObjectMapper();
+
+
+String stringValue = objectMapper.writeValueAsString(productDTO);
+
+mockMvc.perform(
+MockMvcRequestBuilders.post("/product")
+.accept(MediaType.APPLICATION_JSON_VALUE)
+.contentType(MediaType.APPLICATION_JSON_VALUE)
+.content(stringValue))
+.andExcept(MockMvcResultMatches.status().isCreated());
+
+

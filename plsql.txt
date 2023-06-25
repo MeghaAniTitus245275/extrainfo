@@ -1,0 +1,51 @@
+pl/sql:
+
+
+Set @p_temp = 7839;
+call test.one_emp_sal(@p_temp);
+	select @p_temp;
+
+
+CREATE DEFINER=`root`@`localhost` PROCEDURE `dept10_totalsal`(in p_deptno int , out total_sal int)
+BEGIN
+
+		select sum(sal) into total_sal from emp
+        where deptno = 10
+        group by deptno;
+
+END
+
+
+CREATE DEFINER=`root`@`localhost` PROCEDURE `ddept20_totalsal`()
+BEGIN
+
+	select sum(sal) from emp
+    where deptno =20
+    group by deptno;
+
+END
+
+
+
+CREATE DEFINER=`root`@`localhost` PROCEDURE `dept_totalsal`(p_deptno int)
+BEGIN
+	select sum(sal) from emp where deptno = p_deptno;
+END
+
+
+CREATE DEFINER=`root`@`localhost` PROCEDURE `one_emp_sal`(inout p_temp int)
+begin
+	select sal_emp into p_temp from emp
+    where empno = p_temp;
+end
+
+
+
+CREATE DEFINER=`root`@`localhost` PROCEDURE `dept10_totalsal`(in p_deptno int , out total_sal int)
+BEGIN
+
+		select sum(sal) into total_sal from emp
+        where deptno = 10
+        group by deptno;
+
+END

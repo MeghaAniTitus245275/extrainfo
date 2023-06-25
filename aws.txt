@@ -1,0 +1,59 @@
+https://961163754277.signin.aws.amazon.com/console
+
+
+961163754277  
+ tom amdkserah@8080
+
+jerry amdkserah@8090
+
+https://961163754277.signin.aws.amazon.com/console 
+
+bob amdkserah@3060
+https://961163754277.signin.aws.amazon.com/console
+
+noddy	amdkserah@3070
+
+daisy	amdkserah@3080   https://961163754277.signin.aws.amazon.com/console
+
+kristina amdkserah@4000
+
+
+
+
+mysql:admin
+password:
+Meghaanititus
+database created by me:3306
+myonlinestore.chnv5dfjwgek.us-east-2.rds.amazonaws.com
+
+
+
+Data Structure:
+Array
+Linked List
+Stack
+Queue
+
+Binary tree
+Binary search tree
+Heap
+Hashing
+
+Graph
+Matrix
+Misc
+Advanced Data Structure
+
+
+Error while creating database
+
+Failed to turn on Enhanced Monitoring for database null because of missing permissions
+User: arn:aws:iam::961163754277:user/tom is not authorized to perform: iam:CreateRole on resource: arn:aws:iam::961163754277:role/rds-monitoring-role because no identity-based policy allows the iam:CreateRole action
+
+
+
+
+
+
+
+

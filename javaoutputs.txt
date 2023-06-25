@@ -1,0 +1,86 @@
+"Consider the following class... 
+class TestClass
+{
+   int i;
+   public TestClass(int i) { this.i = i;  }
+   public String toString()
+   {
+       if(i == 0) return null;
+       else return """"+i;
+   }
+   public static void main(String[ ] args)
+   {
+      TestClass t1 = new TestClass(0);
+      TestClass t2 = new TestClass(2);
+      System.out.println(t2);
+      System.out.println(""""+t1);
+   }
+}
+What will be the output of the following program?"
+
+	It will print 2 and null	
+
+
+
+ class TestClass
+		   {
+		      public static void main(String args[ ] )
+		      {
+		         float f = 6.5f;
+		         System.out.println( Math.ceil(f) );  //1
+		         System.out.println( Math.round(f) ); //2
+		         System.out.println( Math.floor(f) ); //3
+		         System.out.println( (int) Math.ceil(f) );  //4
+		         System.out.println( (int) Math.floor(f) ); //5
+		      }
+		   }
+
+
+7.0 6 7.0  7 6
+
+
+ boolean[] b1 = new boolean[2];
+   boolean[] b2 = {true , false};
+   System.out.println( """" + (b1[0] == b2[0]) + "", ""+ (b1[1] == b2[1])  );
+
+it will print false true
+
+3)
+class Test
+{
+   public static void main(String[] args) throws Exception
+   {
+      int[] a = null;
+      int i = a [ m1() ];
+   }
+   public static int m1() throws Exception
+   {
+      throw new Exception("Some Exception");
+   }
+}
+
+
+4) 
+ class TestClass{
+     public static void main(String args[])
+     {
+     boolean[] b1 = new boolean[2];
+   boolean[] b2 = {true , false};
+   System.out.println( "" + (b1[0] == b2[0]) + ", "+ (b1[1] == b2[1])  );}}
+ 
+
+
+false true
+
+
+
+5) To provide threading behavior a class must extend Thread class
+	To provide threading behavior a class must explicitly implement Runnable interface
+	Threads created by user are always non-daemon threads
+	Thread created internally by the JVM are always daemon threads
+	None of the above are correct
+
+option c
+
+6)A Functional Interface is a an interface which has
+only 1 abstract method and other default method

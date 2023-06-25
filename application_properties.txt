@@ -1,0 +1,10 @@
+spring.application.service = eureka
+server.port = 8761
+
+eureka.client.fetch-registry=false
+eureka.server.wait-time-in-ms-when-sync-empty=0
+
+
+
+run the spring boot application
+open the browser and request the server

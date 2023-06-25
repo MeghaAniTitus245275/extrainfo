@@ -1,0 +1,3875 @@
+What is  JavaScript ?
+JavaScript is an Interpreted programming and scripting language. 
+Easier to code than the compiled languages like C and C++.
+Lightweight and most commonly used script in web pages.
+Most popular programming language in the world.
+Standardized in the ECMA Script language  specification.
+The JavaScript language is open source and available free.
+JavaScript language runs in the browser.
+JavaScript adds interactivity to HTML pages.
+Allow client side  user to interact and create dynamic pages.
+Client-side means that the JavaScript language runs in the browser.
+
+Where JavaScript is Used ?
+Used to create interactive  and dynamic pages.
+Used in Web Forms Validations.
+Used in Web Applications Development
+Used to develop Hybrid Mobile Applications
+Used for server side business Service Implementation.
+Used to create Windows desktop applications
+Used to create cross-platform applications via frameworks.
+Used for Inserting and swapping Contents in Web Pages
+Used across various platforms and browsers 
+
+Get Started
+Writing First JavaScript Code
+Variables and Statements
+Comments & No Script
+Running JavaScript programs
+Using  IDE’s for javascript
+External JavaScript File
+Benefits of using External Files
+
+Writing and Running first JavaScript Program
+The script tags and type attribute are required to include JavaScript code in an HTML file.  Include script in body tag in html file run the program.
+<html>
+<head>
+<title>hello</title>
+<script type="text/javascript"> 
+function callme() {
+alert("hello world programming");
+  }
+</script>
+</head>
+<body>
+<input type="button" name="b" value="Click"  onclick="callme()" />
+</body>
+</html>
+
+2. Running JavaScript Program
+The script tags and type attribute are required to include JavaScript code in an HTML file.  Include script in head tag in html file run the program.
+<html>
+<head>
+<title>hello</title>
+<script type="text/javascript"> 
+ /*Example statement here */    
+  document.write('hello world');
+</script>
+</head>
+<body>
+</body>
+</html>
+
+
+
+
+3. Running JavaScript Program
+1.Using Browser and Text Editor – Enter info in editor and save file as html and then launch in browser. To see the output, double click on file in folder to see output in browser.
+<html><head>
+<title>My First Javscript program</title> 
+<script type="text/javascript"> 
+function callme(){
+alert("Hello world");  document.write(‘Hello World”); // console.log((‘Hello World”);  }
+Function onmouse() { alert(‘on mouse over’);}
+}
+</script>
+</head>
+<body>
+<button  type="button"  name="Click me"  onClick="callme()">Click Me</button>
+<input type=“text” name=“tex”  id=“nam”  size=“30”  onMouseOver=“onmouse()” />
+</body>
+</html>
+
+
+
+4. Running JavaScript Program
+We can install IDE’s like webstorm, jsfiddle, sublimetext  etc and run javascript programs.
+Follow these steps to run on webstorm
+a). Install nodejs software
+b) Install webstorm 11.0 and above from jetBrains
+c) Choose workspace directory
+d) Create new project
+e) Choose javaScript option to create javascript file
+f) Key in text shown below and save as first.js
+   console.log(' Hello World'); 
+g) Use run option and choose your program.
+h) See Output on console:   Hello World
+
+
+
+Local and Global Variables
+There are two types of variables: local and global. 
+
+Local variables 
+Using the var keyword along with  the variable name is local because it cannot be accessed anywhere outside the scope where we declare it. 
+Declaring statement using local variables
+var num = 10;
+document.write("The value of num is: "+ num);
+
+Global variables 
+Declaring the variable without the var keyword, it is accessible throughout the entire script, not only within that function. Which makes it global within script tag.
+Declaring statement using global variables
+Storing similar values in an array
+var colors = new Array("orange", "blue", "red", "brown");
+var colors = new Array(); 
+colors[0] = "orange"; colors[1] = "blue"; colors[2] = "red"; colors[3] = "brown"; 
+
+
+
+Comments & NoScript  Tag
+
+The <noscript> tag is used to show content for users who have disabled scripts in browser or does not supported from browser.
+The <noscript> tag can be used in in <head> and <body>.
+
+Using noscript  tag:
+<script>document.write(“My First Javascript Programming!")</script><noscript>browser does not support JavaScript!</noscript> 
+
+use comment tag to "hide" scripts from browsers without support for client-side scripts <script>function displayMe() {  alert("My First Javascript Programming!")}</script>  
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>noscript Tag</title>
+</head>
+<body>
+<script type = "text/JavaScript">
+document.write("Hello JavaScript commented!")
+</script>
+ <noscript>
+browser does not support JavaScript!
+</noscript>
+</body>
+</html>
+
+External JavaScript File
+Syntax for Using External JavaScript File
+<script src=“file.js”></script>
+Separate javascript file will be created to include in other files.
+Use comments to hide JavaScript code from browsers that do not support it
+<html>
+<head><title>Using External JS file </title>
+<script src=“js/external.js"></script>
+</head>
+<body>
+<input type="button" name="b"  value="Click"  onclick="callme()" />
+<body>
+</html>
+//  write this in external.js file
+function callme() {
+alert('Hello External');
+}
+
+
+
+
+Benefits:
+
+External JavaScript files are the most common way to include JavaScript code.
+Search engines can crawl and index web site faster if there is less code within HTML page.
+Keeping your JavaScript code separate from HTML is cleaner and ultimately easier to manage.
+On Including multiple JavaScript files in  HTML code we can separate the JavaScript files into different folder structures on web server. 
+Clean, organized code is always key to manage project easily.
+JavaScript Client logic and HTML presentation can be managed better.
+We can manage development team well with separation of roles
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Control Statements are  used to alter the execution of java Script statements.
+Using If, else If & else
+Example and Usage of statement:  
+If one condition is to be checked use only if 
+for 2 conditions  use if and else
+for multiple conditions use if else if and else   
+<html>
+<head><title> Title if else </title>
+<script>  
+var a=20;  
+ if(a==10){  
+document.write("a is equal to 10");  
+}  
+else if(a==20){ {  
+document.write("a is not equal to  20");  
+}  
+
+else { document.write("a is not equal to  10 or 20"); 
+    }
+}
+</script>  
+</head>
+<body>  
+<input type="button" name="button" value="press" onClick="myswitch()" />
+</body>
+</html>
+
+
+
+
+
+// using for loop up count
+for(var i=0; i<5; i++) { 
+document.write(“count: "+ i +"<br/>"); }
+
+// using for loop down count
+for ( var i = 5; i >0; i--) {
+document.write(“count: "+ i +"<br/>"); }
+
+// Using foreach statement
+colors = ['blue', 'green', 'white'];
+colors.forEach(function(item){ 
+document.write(“item: "+ item +"<br/>");
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+What is  JavaScript ?
+JavaScript is an Interpreted programming and scripting language. 
+Easier to code than the compiled languages like C and C++.
+Lightweight and most commonly used script in web pages.
+Most popular programming language in the world.
+Standardized in the ECMA Script language  specification.
+The JavaScript language is open source and available free.
+JavaScript language runs in the browser.
+JavaScript adds interactivity to HTML pages.
+Allow client side  user to interact and create dynamic pages.
+Client-side means that the JavaScript language runs in the browser.
+
+Where JavaScript is Used ?
+Used to create interactive  and dynamic pages.
+Used in Web Forms Validations.
+Used in Web Applications Development
+Used to develop Hybrid Mobile Applications
+Used for server side business Service Implementation.
+Used to create Windows desktop applications
+Used to create cross-platform applications via frameworks.
+Used for Inserting and swapping Contents in Web Pages
+Used across various platforms and browsers 
+
+Get Started
+Writing First JavaScript Code
+Variables and Statements
+Comments & No Script
+Running JavaScript programs
+Using  IDE’s for javascript
+External JavaScript File
+Benefits of using External Files
+
+Writing and Running first JavaScript Program
+The script tags and type attribute are required to include JavaScript code in an HTML file.  Include script in body tag in html file run the program.
+<html>
+<head>
+<title>hello</title>
+<script type="text/javascript"> 
+function callme() {
+alert("hello world programming");
+  }
+</script>
+</head>
+<body>
+<input type="button" name="b" value="Click"  onclick="callme()" />
+</body>
+</html>
+
+2. Running JavaScript Program
+The script tags and type attribute are required to include JavaScript code in an HTML file.  Include script in head tag in html file run the program.
+<html>
+<head>
+<title>hello</title>
+<script type="text/javascript"> 
+ /*Example statement here */    
+  document.write('hello world');
+</script>
+</head>
+<body>
+</body>
+</html>
+
+
+
+
+3. Running JavaScript Program
+1.Using Browser and Text Editor – Enter info in editor and save file as html and then launch in browser. To see the output, double click on file in folder to see output in browser.
+<html><head>
+<title>My First Javscript program</title> 
+<script type="text/javascript"> 
+function callme(){
+alert("Hello world");  document.write(‘Hello World”); // console.log((‘Hello World”);  }
+Function onmouse() { alert(‘on mouse over’);}
+}
+</script>
+</head>
+<body>
+<button  type="button"  name="Click me"  onClick="callme()">Click Me</button>
+<input type=“text” name=“tex”  id=“nam”  size=“30”  onMouseOver=“onmouse()” />
+</body>
+</html>
+
+
+
+4. Running JavaScript Program
+We can install IDE’s like webstorm, jsfiddle, sublimetext  etc and run javascript programs.
+Follow these steps to run on webstorm
+a). Install nodejs software
+b) Install webstorm 11.0 and above from jetBrains
+c) Choose workspace directory
+d) Create new project
+e) Choose javaScript option to create javascript file
+f) Key in text shown below and save as first.js
+   console.log(' Hello World'); 
+g) Use run option and choose your program.
+h) See Output on console:   Hello World
+
+
+
+Local and Global Variables
+There are two types of variables: local and global. 
+
+Local variables 
+Using the var keyword along with  the variable name is local because it cannot be accessed anywhere outside the scope where we declare it. 
+Declaring statement using local variables
+var num = 10;
+document.write("The value of num is: "+ num);
+
+Global variables 
+Declaring the variable without the var keyword, it is accessible throughout the entire script, not only within that function. Which makes it global within script tag.
+Declaring statement using global variables
+Storing similar values in an array
+var colors = new Array("orange", "blue", "red", "brown");
+var colors = new Array(); 
+colors[0] = "orange"; colors[1] = "blue"; colors[2] = "red"; colors[3] = "brown"; 
+
+
+
+Comments & NoScript  Tag
+
+The <noscript> tag is used to show content for users who have disabled scripts in browser or does not supported from browser.
+The <noscript> tag can be used in in <head> and <body>.
+
+Using noscript  tag:
+<script>document.write(“My First Javascript Programming!")</script><noscript>browser does not support JavaScript!</noscript> 
+
+use comment tag to "hide" scripts from browsers without support for client-side scripts <script>function displayMe() {  alert("My First Javascript Programming!")}</script>  
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>noscript Tag</title>
+</head>
+<body>
+<script type = "text/JavaScript">
+document.write("Hello JavaScript commented!")
+</script>
+ <noscript>
+browser does not support JavaScript!
+</noscript>
+</body>
+</html>
+
+External JavaScript File
+Syntax for Using External JavaScript File
+<script src=“file.js”></script>
+Separate javascript file will be created to include in other files.
+Use comments to hide JavaScript code from browsers that do not support it
+<html>
+<head><title>Using External JS file </title>
+<script src=“js/external.js"></script>
+</head>
+<body>
+<input type="button" name="b"  value="Click"  onclick="callme()" />
+<body>
+</html>
+//  write this in external.js file
+function callme() {
+alert('Hello External');
+}
+
+
+Benefits:
+
+External JavaScript files are the most common way to include JavaScript code.
+Search engines can crawl and index web site faster if there is less code within HTML page.
+Keeping your JavaScript code separate from HTML is cleaner and ultimately easier to manage.
+On Including multiple JavaScript files in  HTML code we can separate the JavaScript files into different folder structures on web server. 
+Clean, organized code is always key to manage project easily.
+JavaScript Client logic and HTML presentation can be managed better.
+We can manage development team well with separation of  roles
+
+Control Statements are  used to alter the execution of java Script statements.
+Using If, else If & else
+Example and Usage of statement:  
+If one condition is to be checked use only if 
+for 2 conditions  use if and else
+for multiple conditions use if else if and else   
+<html>
+<head><title> Title if else </title>
+<script>  
+var a=20;  
+ if(a==10){  
+document.write("a is equal to 10");  
+}  
+else if(a==20){ {  
+document.write("a is not equal to  20");  
+}  
+
+else { document.write("a is not equal to  10 or 20"); 
+    }
+}
+</script>  
+</head>
+<body>  
+<input type="button" name="button" value="press" onClick="myswitch()" />
+</body>
+</html>
+
+
+
+
+
+// using for loop up count
+for(var i=0; i<5; i++) { 
+document.write(“count: "+ i +"<br/>"); }
+
+// using for loop down count
+for ( var i = 5; i >0; i--) {
+document.write(“count: "+ i +"<br/>"); }
+
+// Using foreach statement
+colors = ['blue', 'green', 'white'];
+colors.forEach(function(item){ 
+document.write(“item: "+ item +"<br/>");
+});
+
+
+
+
+while loop – check  condition and execute loop statements
+var i = 0; 
+while(i<10) { 
+document.write(i +"<br/>"); 
+i++; 
+}
+do while loop – execute  statement and check condition if not exit loop
+var i = 0;do {  document.write(i +"<br/>"); 
+  i++;}while (i < 5); 
+Continue  skip the loop statements once for condition and goes to top again to check.
+var i = 10;
+While( i < 5) {
+If( i == 3) continue;   
+//skip statements below & goes to top again
+document.write(i +"<br/>"); 
+}
+
+
+
+Switch Statement is useful when checking for multiple conditions.
+<script type="text/javascript">
+var dateobj=new Date()   // use date object 
+var today=dateobj.getDay()  // get day of week 
+switch(today){
+case 1:     document.write(‘Monday’);     break ;
+case 2:     document.write(‘Tuesday’) ;     break;
+case3:      document.write(‘wednesday.’);  break;
+case 4:     document.write(‘thursday.’) ;     break;
+case 5:     document.write(‘friday.’) ;     break;
+case 6:     document.write(‘Saturday’);     break;
+case 0:     document.write(‘sunday’);     break;
+Default:  document.write(‘Do Nothing’); break;
+}
+</script>
+
+conditional (ternary) operator Statement
+This operator that takes 3 operands: a condition followed by a question mark , then an expression to execute if the condition is true followed by a colon (:), and finally the expression to execute if the condition is false.
+<html>
+<head><title>hi</title></head>
+<body>
+<script>
+A=5;
+B=10;
+ A>B ? document.write('A') : document.write('B'); 
+</script>
+</body>
+</html>
+
+
+
+
+
+Writing a Simple Function:   
+Use  Javascript IDE’s like Webstorm, Sublimetext, jsfiddle or any other you  feel comfortable.  Key in function and check the output for sum of numbers in an array.
+var a = [1,3,6,7];
+console.log(sumNums(a));
+function sumNums(vals) {
+    var val=0;
+    for ( var i =0; i < vals.length; i++) {
+        val+=vals[i];
+    }
+    return val;
+}
+
+
+
+Write frecusive unctions for
+1. Factorial 
+2. count down
+3. count up
+4. fibonacci
+and
+5. prime series
+
+
+
+
+
+
+
+<!--Example for Built In Math functions -->
+
+<html>
+<head>
+<title> another Example for Built In Math functions - compute</title>
+<script language="javascript">
+function compute(){ 
+         var a=12;
+         var b=13;		 
+         document.write("Max of two numbers:"+a+" and "+b+":"+Math.max(a,b)+"<br>");
+         document.write("Min of two numbers:"+a+" and "+b+":"+Math.min(a,b)+"<br>");
+         document.write("sqrt of number 16 is:"+ Math.sqrt(16)+"<p>");
+         document.write("Number 4 to the power of Number 2 is:"+ Math.pow(4,2)+"<br>");
+         document.write("Absolute value of -4.256:" + Math.abs(-4.256)+"<br>")
+}
+</script>
+</head>
+<body>
+<input type="button" name="compute" value="compute" onclick="compute()">
+</body>
+</html>
+
+
+<script>
+
+
+function myage(f, low, high) {
+
+ var myage =  document.getElementById('age').value;
+ 
+ var actualAge= parseInt(myage);
+ 
+document.write(actualAge.toString() +':');
+
+
+   if ( actualAge < low  ||  actualAge > high)  {
+   
+   document.write('Invalid Age Range');
+   }
+   
+   else   {
+   
+   document.write('valid Age Range');
+ }
+ 
+ 
+
+}
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>The Dynamic Paragraph: DOM Style</title>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
+</head>
+<body>
+<h1 align="center">The Dynamic Paragraph</h1>
+<hr/>
+<p id="para1">I am a dynamic paragraph. Watch me dance!</p>
+<hr/>
+<form action="#">
+<input type="button" value="Right"
+onclick="getElementById('para1').align='right';" />
+<input type="button" value="Left"
+onclick="getElementById('para1').align='left';" />
+<input type="button" value="Center"
+onclick="getElementById('para1').align='center';" />
+</form>
+</body>
+</html>
+
+
+
+<html>
+<head><title> change attributes </title>
+<script>
+
+function changeLabelStyle() {
+
+document.getElementById("demo").innerHTML = "Hello JavaScript";
+document.getElementById("demo").style.fontSize = "25px";
+document.getElementById("demo").style.color = "red";
+document.getElementById("demo").style.backgroundColor ="orange";
+
+//alert(document.getElementById("demo").style.backgroundColor);
+
+}
+
+function myonload() {
+document.getElementById("bd").style.backgroundColor ="green";
+}
+</script>
+</head>
+<body id="bd"  onload="myonload()">
+<label id="demo"> I am done with programming </label>
+<input type="button" name="button" value="click" onClick="changeLabelStyle()" />
+
+
+</body>
+</html>
+
+
+
+<html>
+<head>
+<title> Time calculation</title>
+
+<script>
+
+
+function calcTime(f) {
+
+ d =  document.getElementById('dist').value;
+ v =  document.getElementById('vel').value;
+  mtime = parseFloat(d)/parseFloat(v);
+  document.getElementById('mt').value = mtime;
+
+}
+
+
+</script>
+
+</head>
+
+<body>
+
+<form>
+
+<h3> Distance Calculation </h3>
+Distance: <input type="text" name="distance" id="dist"  value="" > <br><br>
+Velocity: <input type="text" name="velocity" id="vel"  value="" ><br><br>
+time Taken: <input type="text" name="mytime" id="mt"  value="" ><br><br>
+
+<input type="button" name="b" value="calc" onclick="calcTime(this.form)">
+
+</form>
+
+</body>
+</html>
+
+
+function countcase(word){
+    var upper=0;
+    var lower=0;
+    console.log("wordlength:" + word.length);
+
+    for(var i=0;i<word.length;i++){
+        if(isUpperCase(word[i])) {
+            upper=upper+1;
+        }
+        else{
+            lower=lower+1;
+        }
+
+    }
+
+console.log("UpperCount:" +upper);
+    console.log("LowerCount:" +lower);
+
+}
+
+function reverse(str){
+
+    for(var i=1;i<=str.length;i++){
+        console.log(str[str.length-i]);
+    }
+
+}
+
+function poly(str){
+    var back,fwd;
+    for(var i=0;i<str.length;i++) {
+        back = str[(str.length - 1)-i];
+        fwd = str[i];
+        //console.log(back + ':' + fwd);
+        if(back != fwd)
+        return false;
+    }
+return true;
+}
+
+
+function isUpperCase(c) {
+    if( c >='A' &&  c <='Z')    return true;
+}
+
+
+countcase('HeLLo');
+reverse("hello");
+s="sad";
+console.log(poly(s));
+if(poly(s))
+console.log("word is palnidrom");
+else
+console.log("word is jot palm");
+
+
+
+function wages(totalHours,hourlyWage) {
+    var regularHours=0;
+    var overtime=0;
+
+    if (totalHours <= 40) {
+        regularHours = totalHours
+        overtime = 0
+        console.log("No over due work time")
+    }
+    else {
+        overtime = totalHours - 40
+        regularHours = 40
+        console.log(hourlyWage*regularHours + (1.5*hourlyWage)*overtime);
+    }
+}
+
+wages(54,100);
+
+
+
+function makewithdraw(balance) {
+    this.balance = balance;
+    this.withdraw=withdraw;
+}
+
+
+function withdraw(amount) {
+
+
+        if (amount > this.balance) {
+            console.log("Insufficient funds");
+            return;
+        }
+        this.balance=this.balance-amount;
+        return this.balance;
+
+
+}
+var acc = new makewithdraw(500);
+console.log(acc.withdraw(100));
+
+
+function sort(arr){
+    var i,j;
+
+    for(i=0;i<=arr.length;i++) {
+        for (j = i + 1; j <= arr.length; j++)
+            if (arr[j] < arr[i]) {
+                var temp = arr[i];
+                arr[i] = arr[j];
+                arr[j] = temp;
+            }
+    }
+ return arr;
+}
+
+array=[3,5,4,8,1];
+console.log("after sort: "+sort(array));
+
+
+
+
+var s ="Hello World Welcome to programming";
+
+checkUpperLowerCaseString(s);
+
+
+function checkUpperLowerCaseString(str) {
+
+var len =  str.length;
+lowercount=0;
+uppercount=0;
+
+for ( var i =0; i < len; i++) {
+
+ // console.log(str[i])  ;
+    if(checkupper(str[i]))    uppercount++;
+
+    else lowercount++;
+
+}
+
+
+console.log("uppercount:", uppercount);
+console.log("lowecount:", lowercount);
+
+}
+
+
+function checkupper(c) {
+
+    if( c >='A'  && c<='Z')  return true;
+
+}
+
+
+function Dictionary() {
+this.add = add;
+this.datastore = new Array();
+this.find = find;
+this.remove = remove;
+this.showAll = showAll;
+}
+function add(key, value) {
+this.datastore[key] = value;
+}
+function find(key) {
+return this.datastore[key];
+
+}
+function remove(key) {
+delete this.datastore[key];
+}
+function showAll() {
+for each (var key in Object.keys(this.datastore)) {
+print(key + " -> " + this.datastore[key]);
+}
+}
+
+load("Dictionary.js");
+var pbook = new Dictionary();
+pbook.add("Mike","123");
+pbook.add("David", "345");
+pbook.add("Cynthia", "456");
+print("David's extension: " + pbook.find("David"));
+pbook.remove("David");
+pbook.showAll();
+The output from this program is:
+David's extension: 345
+Mike -> 123
+Cynthia -> 456
+
+
+function fact(n) {
+var s = new Stack();
+while (n > 1) {
+s.push(n--);
+}
+var product = 1;
+while (s.length() > 0) {
+product *= s.pop();
+}
+return product;
+}
+print(factorial(5)); // displays 120
+print(fact(5)); // displays 120
+
+
+
+
+function Dictionary() {
+this.add = add;
+this.datastore = new Array();
+this.find = find;
+this.remove = remove;
+this.showAll = showAll;
+this.count = count;
+this.clear = clear;
+}
+function add(key, value) {
+this.datastore[key] = value;
+}
+function find(key) {
+return this.datastore[key];
+}
+function remove(key) {
+delete this.datastore[key];
+}
+function showAll() {
+for each (var key in Object.keys(this.datastore)) {
+print(key + " -> " + this.datastore[key]);
+}
+}
+function count() {
+var n = 0;
+for each (var key in Object.keys(this.datastore)) {
+++n;
+}
+return n;
+}
+function clear() {
+for each (var key in Object.keys(this.datastore)) {
+delete this.datastore[key];
+}
+}
+Example 7-4 illustrates how these new auxiliary functions work.
+Example 7-4. Using the count() and clear() functions
+load("Dictionary.js");
+var pbook = new Dictionary();
+pbook.add("Raymond","123");
+pbook.add("David", "345");
+pbook.add("Cynthia", "456");
+print("Number of entries: " + pbook.count());
+print("David's extension: " + pbook.find("David"));
+pbook.showAll();
+pbook.clear();
+print("Number of entries: " + pbook.count());
+The output from this code is:
+Number of entries: 3
+David's extension: 345
+Raymond -> 123
+David -> 345
+Cynthia -> 456
+Number of entries: 0
+
+function showAll() {
+for each (var key in Object.keys(this.datastore).sort()) {
+print(key + " -> " + this.datastore[key]);
+}
+}
+
+
+load("Dictionary.js");
+var pbook = new Dictionary();
+pbook.add("Raymond","123");
+pbook.add("David", "345");
+pbook.add("Cynthia", "456");
+pbook.add("Mike", "723");
+pbook.add("Jennifer", "987");
+pbook.add("Danny", "012");
+pbook.add("Jonathan", "666");
+pbook.showAll();
+Here is the output of the program:
+Cynthia -> 456
+Danny -> 012
+David -> 345
+Jennifer -> 987
+Jonathan -> 666
+Mike -> 723
+Raymond -> 123
+
+
+
+
+<html>
+	<head>
+		<script language="javascript">
+			var mcname = "Good Morning!   Welcome yo programming ! Good Morning!   Welcome yo programming  Good Morning!   Welcome yo programming  Good Morning!   Welcome yo programming ";
+			var delay=300;
+			var timer;
+			function fndisplay()
+				{
+				document.getElementById("name").value = mcname;
+
+				mcname = mcname.substring(1,mcname.length) + mcname.substring(0,1);
+				//alert("hi" + mcname);
+
+				timer = setTimeout("fndisplay()",delay);
+				}
+			
+			
+		</script>
+	</head>
+	
+	<body onLoad="fndisplay()">
+		<input type="text" id="name"   size="600" style="background-color:orange; height:40px ;width:300px; font-size:30px; font-color:white;">
+	</body>
+</html>
+
+
+
+<html>
+<head>
+<title>arrays</title>
+<script language="javascript">
+function display_quote()
+{
+alert("welcome");
+
+var quote=new Array(5)
+
+quote[0]="html";
+quote[1]="css";
+quote[2]="java script";
+quote[3]="jquery";
+quote[4]="html5";
+
+var x=0;
+for(x=0;x<5;x++)
+{
+
+document.write('\n'+quote[x]);
+
+}
+
+}
+
+</script>
+</head>
+<body>
+<form name="arr">
+<input type="button" name="b1" value="display" onClick="display_quote()">
+
+
+</form>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<div class="navcontent">
+<div class="nav"><iframe  src="service.html"  name="navframe"  width="100%"  height="100%"> Hello </iframe> </div>
+<div class="content"> <iframe  src="home.html"  name="conframe"   style ="width:100%;  height:100%;  scrolling:"no";"  > Hello </iframe> </div>
+</div>
+
+
+<div class="footer"> 
+<marquee><h1> Our Website is Up and Running - Advanced Technology Training</h1></marquee>
+
+ <div style="text-align:center;font-size:25px; color:white;">
+<a href="first.html" target="conframe" style="text-decoration:none;font-size:1.0em; color:white;">Terms</a>
+<a  href="format.html" target="conframe" style="text-decoration:none;font-size:1.0em; color:white;">Privacy</a> 
+<a  href="four.html" target="conframe" style="text-decoration:none;font-size:1.0em; color:white;">Policy</a>
+<a  href="second.html" target="conframe" style="text-decoration:none;font-size:1.0em; color:white;">Sitemap</a>  
+ </div>
+
+</div>
+
+css part
+
+
+.menu {  float:left; width: 97%;  height: 60px; background-color: orange;  color:white;font-size:30px ;margin-top:0px; }
+.menu ul { overflow: hidden; z-index: 1000; position: absolute; }
+.menu li a { display: block;color:white;text-align: center;font-size:22px; font-weight:bold;text-decoration: none;  padding: 10px; }
+.menu li  { float: left;list-style: none;width: 90px;  color:white;text-align:center;font-size:22px; font-weight:bold; padding: 10px; }
+
+
+
+.menu li a:hover  { background-color:pink; }
+
+
+.menu li ul li a:hover{
+background:pink; 
+}
+
+
+Writing and Running first JavaScript Program
+The script tags and type attribute are required to include JavaScript code in an HTML file.  Include script in body tag in html file run the program.
+        <html>
+            <head>
+       <title>hello</title>
+           <script type="text/javascript"> 
+           function callme() {
+           alert("hello world programming");
+          }
+       </script>
+          </head>
+        <body>
+             <input type="button" name="b"  value="Click"  onclick="callme()" />
+         </body>
+     
+</html>
+
+
+
+What is  JavaScript ?
+JavaScript is an Interpreted programming and scripting language. 
+Easier to code than the compiled languages like C and C++.
+Lightweight and most commonly used script in web pages.
+Most popular programming language in the world.
+Standardized in the ECMA Script language  specification.
+The JavaScript language is open source and available free.
+JavaScript language runs in the browser.
+JavaScript adds interactivity to HTML pages.
+Allow client side  user to interact and create dynamic pages.
+Client-side means that the JavaScript language runs in the browser.
+
+Where JavaScript is Used ?
+Used to create interactive  and dynamic pages.
+Used in Web Forms Validations.
+Used in Web Applications Development
+Used to develop Hybrid Mobile Applications
+Used for server side business Service Implementation.
+Used to create Windows desktop applications
+Used to create cross-platform applications via frameworks.
+Used for Inserting and swapping Contents in Web Pages
+Used across various platforms and browsers 
+
+Get Started
+Writing First JavaScript Code
+Variables and Statements
+Comments & No Script
+Running JavaScript programs
+Using  IDE’s for javascript
+External JavaScript File
+Benefits of using External Files
+
+Writing and Running first JavaScript Program
+The script tags and type attribute are required to include JavaScript code in an HTML file.  Include script in body tag in html file run the program.
+<html>
+<head>
+<title>hello</title>
+<script type="text/javascript"> 
+function callme() {
+alert("hello world programming");
+  }
+</script>
+</head>
+<body>
+<input type="button" name="b" value="Click"  onclick="callme()" />
+</body>
+</html>
+
+2. Running JavaScript Program
+The script tags and type attribute are required to include JavaScript code in an HTML file.  Include script in head tag in html file run the program.
+<html>
+<head>
+<title>hello</title>
+<script type="text/javascript"> 
+ /*Example statement here */    
+  document.write('hello world');
+</script>
+</head>
+<body>
+</body>
+</html>
+
+
+
+
+3. Running JavaScript Program
+1.Using Browser and Text Editor – Enter info in editor and save file as html and then launch in browser. To see the output, double click on file in folder to see output in browser.
+<html><head>
+<title>My First Javscript program</title> 
+<script type="text/javascript"> 
+function callme(){
+alert("Hello world");  document.write(‘Hello World”); // console.log((‘Hello World”);  }
+Function onmouse() { alert(‘on mouse over’);}
+}
+</script>
+</head>
+<body>
+<button  type="button"  name="Click me"  onClick="callme()">Click Me</button>
+<input type=“text” name=“tex”  id=“nam”  size=“30”  onMouseOver=“onmouse()” />
+</body>
+</html>
+
+
+
+4. Running JavaScript Program
+We can install IDE’s like webstorm, jsfiddle, sublimetext  etc and run javascript programs.
+Follow these steps to run on webstorm
+a). Install nodejs software
+b) Install webstorm 11.0 and above from jetBrains
+c) Choose workspace directory
+d) Create new project
+e) Choose javaScript option to create javascript file
+f) Key in text shown below and save as first.js
+   console.log(' Hello World'); 
+g) Use run option and choose your program.
+h) See Output on console:   Hello World
+
+
+
+Local and Global Variables
+There are two types of variables: local and global. 
+
+Local variables 
+Using the var keyword along with  the variable name is local because it cannot be accessed anywhere outside the scope where we declare it. 
+Declaring statement using local variables
+var num = 10;
+document.write("The value of num is: "+ num);
+
+Global variables 
+Declaring the variable without the var keyword, it is accessible throughout the entire script, not only within that function. Which makes it global within script tag.
+Declaring statement using global variables
+Storing similar values in an array
+var colors = new Array("orange", "blue", "red", "brown");
+var colors = new Array(); 
+colors[0] = "orange"; colors[1] = "blue"; colors[2] = "red"; colors[3] = "brown"; 
+
+
+
+Comments & NoScript  Tag
+
+The <noscript> tag is used to show content for users who have disabled scripts in browser or does not supported from browser.
+The <noscript> tag can be used in in <head> and <body>.
+
+Using noscript  tag:
+<script>document.write(“My First Javascript Programming!")</script><noscript>browser does not support JavaScript!</noscript> 
+
+use comment tag to "hide" scripts from browsers without support for client-side scripts <script>function displayMe() {  alert("My First Javascript Programming!")}</script>  
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>noscript Tag</title>
+</head>
+<body>
+<script type = "text/JavaScript">
+document.write("Hello JavaScript commented!")
+</script>
+ <noscript>
+browser does not support JavaScript!
+</noscript>
+</body>
+</html>
+
+External JavaScript File
+Syntax for Using External JavaScript File
+<script src=“file.js”></script>
+Separate javascript file will be created to include in other files.
+Use comments to hide JavaScript code from browsers that do not support it
+<html>
+<head><title>Using External JS file </title>
+<script src=“js/external.js"></script>
+</head>
+<body>
+<input type="button" name="b"  value="Click"  onclick="callme()" />
+<body>
+</html>
+//  write this in external.js file
+function callme() {
+alert('Hello External');
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<div class="navcontent">
+<div class="nav"><iframe  src="service.html"  name="navframe"  width="100%"  height="100%"> Hello </iframe> </div>
+<div class="content"> <iframe  src="home.html"  name="conframe"   style ="width:100%;  height:100%;  scrolling:"no";"  > Hello </iframe> </div>
+</div>
+
+
+<div class="footer"> 
+<marquee><h1> Our Website is Up and Running - Advanced Technology Training</h1></marquee>
+
+ <div style="text-align:center;font-size:25px; color:white;">
+<a href="first.html" target="conframe" style="text-decoration:none;font-size:1.0em; color:white;">Terms</a>
+<a  href="format.html" target="conframe" style="text-decoration:none;font-size:1.0em; color:white;">Privacy</a> 
+<a  href="four.html" target="conframe" style="text-decoration:none;font-size:1.0em; color:white;">Policy</a>
+<a  href="second.html" target="conframe" style="text-decoration:none;font-size:1.0em; color:white;">Sitemap</a>  
+ </div>
+
+</div>
+
+css part
+
+
+.menu {  float:left; width: 97%;  height: 60px; background-color: orange;  color:white;font-size:30px ;margin-top:0px; }
+.menu ul { overflow: hidden; z-index: 1000; position: absolute; }
+.menu li a { display: block;color:white;text-align: center;font-size:22px; font-weight:bold;text-decoration: none;  padding: 10px; }
+.menu li  { float: left;list-style: none;width: 90px;  color:white;text-align:center;font-size:22px; font-weight:bold; padding: 10px; }
+
+
+
+.menu li a:hover  { background-color:pink; }
+
+
+.menu li ul li a:hover{
+background:pink; 
+}
+
+
+Writing and Running first JavaScript Program
+The script tags and type attribute are required to include JavaScript code in an HTML file.  Include script in body tag in html file run the program.
+        <html>
+            <head>
+       <title>hello</title>
+           <script type="text/javascript"> 
+           function callme() {
+           alert("hello world programming");
+          }
+       </script>
+          </head>
+        <body>
+             <input type="button" name="b"  value="Click"  onclick="callme()" />
+         </body>
+     
+</html>
+
+
+
+
+
+What is  JavaScript ?
+JavaScript is an Interpreted programming and scripting language. 
+Easier to code than the compiled languages like C and C++.
+Lightweight and most commonly used script in web pages.
+Most popular programming language in the world.
+Standardized in the ECMA Script language  specification.
+The JavaScript language is open source and available free.
+JavaScript language runs in the browser.
+JavaScript adds interactivity to HTML pages.
+Allow client side  user to interact and create dynamic pages.
+Client-side means that the JavaScript language runs in the browser.
+
+Where JavaScript is Used ?
+Used to create interactive  and dynamic pages.
+Used in Web Forms Validations.
+Used in Web Applications Development
+Used to develop Hybrid Mobile Applications
+Used for server side business Service Implementation.
+Used to create Windows desktop applications
+Used to create cross-platform applications via frameworks.
+Used for Inserting and swapping Contents in Web Pages
+Used across various platforms and browsers 
+
+Get Started
+Writing First JavaScript Code
+Variables and Statements
+Comments & No Script
+Running JavaScript programs
+Using  IDE’s for javascript
+External JavaScript File
+Benefits of using External Files
+
+Writing and Running first JavaScript Program
+The script tags and type attribute are required to include JavaScript code in an HTML file.  Include script in body tag in html file run the program.
+<html>
+<head>
+<title>hello</title>
+<script type="text/javascript"> 
+function callme() {
+alert("hello world programming");
+  }
+</script>
+</head>
+<body>
+<input type="button" name="b" value="Click"  onclick="callme()" />
+</body>
+</html>
+
+2. Running JavaScript Program
+The script tags and type attribute are required to include JavaScript code in an HTML file.  Include script in head tag in html file run the program.
+<html>
+<head>
+<title>hello</title>
+<script type="text/javascript"> 
+ /*Example statement here */    
+  document.write('hello world');
+</script>
+</head>
+<body>
+</body>
+</html>
+
+
+
+
+3. Running JavaScript Program
+1.Using Browser and Text Editor – Enter info in editor and save file as html and then launch in browser. To see the output, double click on file in folder to see output in browser.
+<html><head>
+<title>My First Javscript program</title> 
+<script type="text/javascript"> 
+function callme(){
+alert("Hello world");  document.write(‘Hello World”); // console.log((‘Hello World”);  }
+Function onmouse() { alert(‘on mouse over’);}
+}
+</script>
+</head>
+<body>
+<button  type="button"  name="Click me"  onClick="callme()">Click Me</button>
+<input type=“text” name=“tex”  id=“nam”  size=“30”  onMouseOver=“onmouse()” />
+</body>
+</html>
+
+
+
+4. Running JavaScript Program
+We can install IDE’s like webstorm, jsfiddle, sublimetext  etc and run javascript programs.
+Follow these steps to run on webstorm
+a). Install nodejs software
+b) Install webstorm 11.0 and above from jetBrains
+c) Choose workspace directory
+d) Create new project
+e) Choose javaScript option to create javascript file
+f) Key in text shown below and save as first.js
+   console.log(' Hello World'); 
+g) Use run option and choose your program.
+h) See Output on console:   Hello World
+
+
+
+Local and Global Variables
+There are two types of variables: local and global. 
+
+Local variables 
+Using the var keyword along with  the variable name is local because it cannot be accessed anywhere outside the scope where we declare it. 
+Declaring statement using local variables
+var num = 10;
+document.write("The value of num is: "+ num);
+
+Global variables 
+Declaring the variable without the var keyword, it is accessible throughout the entire script, not only within that function. Which makes it global within script tag.
+Declaring statement using global variables
+Storing similar values in an array
+var colors = new Array("orange", "blue", "red", "brown");
+var colors = new Array(); 
+colors[0] = "orange"; colors[1] = "blue"; colors[2] = "red"; colors[3] = "brown"; 
+
+
+
+Comments & NoScript  Tag
+
+The <noscript> tag is used to show content for users who have disabled scripts in browser or does not supported from browser.
+The <noscript> tag can be used in in <head> and <body>.
+
+Using noscript  tag:
+<script>document.write(“My First Javascript Programming!")</script><noscript>browser does not support JavaScript!</noscript> 
+
+use comment tag to "hide" scripts from browsers without support for client-side scripts <script>function displayMe() {  alert("My First Javascript Programming!")}</script>  
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>noscript Tag</title>
+</head>
+<body>
+<script type = "text/JavaScript">
+document.write("Hello JavaScript commented!")
+</script>
+ <noscript>
+browser does not support JavaScript!
+</noscript>
+</body>
+</html>
+
+External JavaScript File
+Syntax for Using External JavaScript File
+<script src=“file.js”></script>
+Separate javascript file will be created to include in other files.
+Use comments to hide JavaScript code from browsers that do not support it
+<html>
+<head><title>Using External JS file </title>
+<script src=“js/external.js"></script>
+</head>
+<body>
+<input type="button" name="b"  value="Click"  onclick="callme()" />
+<body>
+</html>
+//  write this in external.js file
+function callme() {
+alert('Hello External');
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<div class="navcontent">
+<div class="nav"><iframe  src="service.html"  name="navframe"  width="100%"  height="100%"> Hello </iframe> </div>
+<div class="content"> <iframe  src="home.html"  name="conframe"   style ="width:100%;  height:100%;  scrolling:"no";"  > Hello </iframe> </div>
+</div>
+
+
+<div class="footer"> 
+<marquee><h1> Our Website is Up and Running - Advanced Technology Training</h1></marquee>
+
+ <div style="text-align:center;font-size:25px; color:white;">
+<a href="first.html" target="conframe" style="text-decoration:none;font-size:1.0em; color:white;">Terms</a>
+<a  href="format.html" target="conframe" style="text-decoration:none;font-size:1.0em; color:white;">Privacy</a> 
+<a  href="four.html" target="conframe" style="text-decoration:none;font-size:1.0em; color:white;">Policy</a>
+<a  href="second.html" target="conframe" style="text-decoration:none;font-size:1.0em; color:white;">Sitemap</a>  
+ </div>
+
+</div>
+
+css part
+
+
+.menu {  float:left; width: 97%;  height: 60px; background-color: orange;  color:white;font-size:30px ;margin-top:0px; }
+.menu ul { overflow: hidden; z-index: 1000; position: absolute; }
+.menu li a { display: block;color:white;text-align: center;font-size:22px; font-weight:bold;text-decoration: none;  padding: 10px; }
+.menu li  { float: left;list-style: none;width: 90px;  color:white;text-align:center;font-size:22px; font-weight:bold; padding: 10px; }
+
+
+
+.menu li a:hover  { background-color:pink; }
+
+
+.menu li ul li a:hover{
+background:pink; 
+}
+
+
+Writing and Running first JavaScript Program
+The script tags and type attribute are required to include JavaScript code in an HTML file.  Include script in body tag in html file run the program.
+        <html>
+            <head>
+       <title>hello</title>
+           <script type="text/javascript"> 
+           function callme() {
+           alert("hello world programming");
+          }
+       </script>
+          </head>
+        <body>
+             <input type="button" name="b"  value="Click"  onclick="callme()" />
+         </body>
+     
+</html>
+
+
+
+
+
+What is  JavaScript ?
+JavaScript is an Interpreted programming and scripting language. 
+Easier to code than the compiled languages like C and C++.
+Lightweight and most commonly used script in web pages.
+Most popular programming language in the world.
+Standardized in the ECMA Script language  specification.
+The JavaScript language is open source and available free.
+JavaScript language runs in the browser.
+JavaScript adds interactivity to HTML pages.
+Allow client side  user to interact and create dynamic pages.
+Client-side means that the JavaScript language runs in the browser.
+
+Where JavaScript is Used ?
+Used to create interactive  and dynamic pages.
+Used in Web Forms Validations.
+Used in Web Applications Development
+Used to develop Hybrid Mobile Applications
+Used for server side business Service Implementation.
+Used to create Windows desktop applications
+Used to create cross-platform applications via frameworks.
+Used for Inserting and swapping Contents in Web Pages
+Used across various platforms and browsers 
+
+Get Started
+Writing First JavaScript Code
+Variables and Statements
+Comments & No Script
+Running JavaScript programs
+Using  IDE’s for javascript
+External JavaScript File
+Benefits of using External Files
+
+Writing and Running first JavaScript Program
+The script tags and type attribute are required to include JavaScript code in an HTML file.  Include script in body tag in html file run the program.
+<html>
+<head>
+<title>hello</title>
+<script type="text/javascript"> 
+function callme() {
+alert("hello world programming");
+  }
+</script>
+</head>
+<body>
+<input type="button" name="b" value="Click"  onclick="callme()" />
+</body>
+</html>
+
+2. Running JavaScript Program
+The script tags and type attribute are required to include JavaScript code in an HTML file.  Include script in head tag in html file run the program.
+<html>
+<head>
+<title>hello</title>
+<script type="text/javascript"> 
+ /*Example statement here */    
+  document.write('hello world');
+</script>
+</head>
+<body>
+</body>
+</html>
+
+
+
+
+3. Running JavaScript Program
+1.Using Browser and Text Editor – Enter info in editor and save file as html and then launch in browser. To see the output, double click on file in folder to see output in browser.
+<html><head>
+<title>My First Javscript program</title> 
+<script type="text/javascript"> 
+function callme(){
+alert("Hello world");  document.write(‘Hello World”); // console.log((‘Hello World”);  }
+Function onmouse() { alert(‘on mouse over’);}
+}
+</script>
+</head>
+<body>
+<button  type="button"  name="Click me"  onClick="callme()">Click Me</button>
+<input type=“text” name=“tex”  id=“nam”  size=“30”  onMouseOver=“onmouse()” />
+</body>
+</html>
+
+
+
+4. Running JavaScript Program
+We can install IDE’s like webstorm, jsfiddle, sublimetext  etc and run javascript programs.
+Follow these steps to run on webstorm
+a). Install nodejs software
+b) Install webstorm 11.0 and above from jetBrains
+c) Choose workspace directory
+d) Create new project
+e) Choose javaScript option to create javascript file
+f) Key in text shown below and save as first.js
+   console.log(' Hello World'); 
+g) Use run option and choose your program.
+h) See Output on console:   Hello World
+
+
+
+Local and Global Variables
+There are two types of variables: local and global. 
+
+Local variables 
+Using the var keyword along with  the variable name is local because it cannot be accessed anywhere outside the scope where we declare it. 
+Declaring statement using local variables
+var num = 10;
+document.write("The value of num is: "+ num);
+
+Global variables 
+Declaring the variable without the var keyword, it is accessible throughout the entire script, not only within that function. Which makes it global within script tag.
+Declaring statement using global variables
+Storing similar values in an array
+var colors = new Array("orange", "blue", "red", "brown");
+var colors = new Array(); 
+colors[0] = "orange"; colors[1] = "blue"; colors[2] = "red"; colors[3] = "brown"; 
+
+
+
+Comments & NoScript  Tag
+
+The <noscript> tag is used to show content for users who have disabled scripts in browser or does not supported from browser.
+The <noscript> tag can be used in in <head> and <body>.
+
+Using noscript  tag:
+<script>document.write(“My First Javascript Programming!")</script><noscript>browser does not support JavaScript!</noscript> 
+
+use comment tag to "hide" scripts from browsers without support for client-side scripts <script>function displayMe() {  alert("My First Javascript Programming!")}</script>  
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>noscript Tag</title>
+</head>
+<body>
+<script type = "text/JavaScript">
+document.write("Hello JavaScript commented!")
+</script>
+ <noscript>
+browser does not support JavaScript!
+</noscript>
+</body>
+</html>
+
+External JavaScript File
+Syntax for Using External JavaScript File
+<script src=“file.js”></script>
+Separate javascript file will be created to include in other files.
+Use comments to hide JavaScript code from browsers that do not support it
+<html>
+<head><title>Using External JS file </title>
+<script src=“js/external.js"></script>
+</head>
+<body>
+<input type="button" name="b"  value="Click"  onclick="callme()" />
+<body>
+</html>
+//  write this in external.js file
+function callme() {
+alert('Hello External');
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
